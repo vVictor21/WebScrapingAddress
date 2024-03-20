@@ -180,7 +180,7 @@ def main():
     """
     Main function
     """
-    df = pd.read_parquet('list of company websites.snappy.parquet')
+    df = pd.read_parquet('Your_file.parquet')  # Change the filename here
     websites = df['domain'].tolist()
     addressWebsiteFoundCounter = 0
     addressWebsiteNotFoundCounter = 0
