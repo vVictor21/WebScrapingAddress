@@ -181,7 +181,7 @@ def main():
     Main function
     """
     df = pd.read_parquet('Your_file.parquet')  # Change the filename here
-    websites = df['domain'].tolist()
+    websites = df['domain'].tolist()  # Also needs changed depending on collumn name
     addressWebsiteFoundCounter = 0
     addressWebsiteNotFoundCounter = 0
     found_addresses = []
